@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character-counter</title>
+    <!--Tailwind CSS Link-->
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+    <!--Text Area-->
+    <section>
+        <div class="flex flex-col text-center items-center mt-20 gap-5">
+            <h1 class="text-xl font-bold md:text-3xl">Character Counter</h1>
+            <textarea id="txtarea" placeholder="Type here..." maxlength="200" class="border-black border-2 w-80 h-50 md:w-3xl h-70"></textarea>
+            <p class="font-bold text-md md:text-lg">Maximum allowed characters: 200</p>
+            <p id="typchar" class="font-bold text-md md:text-lg">No of characters typed 0/200</p>
+            <p id="warningmsg" class="font-black text-red-600 text-md md:text-lg hidden">You reched the limit.</p>
+        </div>
+    </section>
+    <!--Java Script File-->
+    <script src="./script.js"></script>
+</body>
+</html>
